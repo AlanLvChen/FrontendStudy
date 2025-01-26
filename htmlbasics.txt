@@ -1,0 +1,218 @@
+HTML - Hypertext Markup Language
+  Defines content - structure - meaning of webpages
+
+www - World Wide Web
+
+Hypertext - text that is interactive. Contains link to navigate. 
+  Hyper - skips normal reading flow to jump to other pieces of text
+
+Markup Language - "marking up" text (give it a special meaning)
+  Language - formal syntax and grammatical rules
+
+HTML is not a programming language ( no logic )
+
+
+Writing HTML
+
+1. Document type declaration
+    - represent version of HTML being used. In this case: html5
+    - Other version are too verbose (expressed in too many words)
+    
+    <DOCTYPE! html>
+
+2. Laying out document
+      - Root Element:  <html></html>
+          - defines whole HTML document. 
+      - <> </>: starting and ending tag. [tag: represents an element in source code]
+              Two kinds of elements: 
+                  Container Elements:      has starting + ending tags
+                  Non-container Elements:  only starting tags
+        
+3. Two main parts of HTML document
+      - Meta Information: <head></head>
+          - Document information
+      - Content: <body></body>
+          - What is rendered
+      
+Common HTML elements:
+        <h1></h1>: main heading. Runs from h1 --> h6
+
+        <p></p>: paragraph
+
+        <a></a>: anchor. Connects two points. hyperlink in HTML
+
+        <title></title>: document title. Seen on search engines and browser tab.
+              - Used by search engines as the heading to display in SERPS (Search Engine Results Page)
+
+
+
+Attributes: traits of HTML element
+  <a href="https://google.com/">Google Link</a>
+        - href: hyper reference. 
+        - For a remote resource a fully qualified URL is needed. (https) [scheme of URL]
+
+
+Coding style guide:
+        1. Lowercase tag name.
+          <html><title>...
+        2. Indent nested elements.
+        3. No space between attribute name and value
+            <a href="no space">
+        4. Quote attribute values
+              
+
+
+HTML Text
+
+  Headings
+    <h1> <h2>  <h3>  <h4>  <h5>  <h6>
+    - Reccommended to have exactly one <h1> element on a webpage
+
+  Paragraphs
+    <p>
+    - contains vertical margins around them to space out from other paragraphs
+
+  Bold and Italicize
+      <strong>: text is strong importance (bold)
+      <em>:     text is emphasized        (italicized)
+
+      Similarly
+      <b>:  bold
+      <i>:  italics
+
+      Difference is semantic HTML. <b> and <i> are exclusively visual styling. Has no meaning
+
+      <i> or <em>
+          - <i> for icons. <em> for italics.
+      <b> or <strong>
+          - <b> for text bold. <strong> for important text
+
+
+  Superscript and Subscript
+      <sup>: x^2
+      <sub>: x_2
+
+
+  Line breaks
+      <br>: introduces a line break. Only be used for new lines within a block of text.
+          - Use <p> if it wants a new block of text
+
+          In HTML, sequences of whitespace are replaced by a single space in output.
+
+
+  HTML Lists
+      <ol>:  ordered lists. Numbered
+      <ul>:  unordered lists. Bulleted
+          
+          
+      Child element of <ol> and <ul>:
+          <li>: list item. Should only be used in <ol> or <ul>
+  
+      <ol> and <ul> should only contain <li>
+
+      Speecial attributes for <ol>
+      <ol reversed>: 1-->3 becomes 3-->1
+      <ol type="i">: Specify numbering type 
+          "a":  a,b,c    "1":  1,2,3      "I":  I,II,III
+          "A":  A,B,C    "i":  i,ii,iii
+      <ol start="10">: numbering always begin at number given. EVEN if reversed
+        
+
+      
+      Nesting Lists
+        <ul>
+          <li>
+            <p>Languages</p>
+            <ul>
+              <li>English</li>
+              <li>Spanish</li>
+            </ul>
+          </li>
+        </ul>
+
+
+    HTML Advanced Text
+
+        <pre>:   preformatting
+            <pre>This is    spaced-out     text.</pre>
+            Issue: renders text with monospaced font. since code is in monospaced.
+            <pre style="font-family: inherit">This is    spaced-out     text.<pre>
+            Solution: font-family to inherit font family on the parent of <pre>
+
+            In practice, preserving whitespace in a <p>, just use CSS to style.
+          
+
+        <dfn>:   contains term being defined 
+            <p>A <dfn>data type</dfn> is a set of values along with the operations possible on 
+            those values.</p>
+            - The text surrounding <dfn> must define the term
+
+        <abbr>:  abbreviations. Applies dotted underline
+            <p>HTML <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+            Just have one <abbr> at where the abbreviation occurs first
+
+
+        <mark>:  highlighting text
+
+        <s>:     strike-through text
+
+        <ins>:  denote any insertion of text (styled with underline)
+        <del>:  denote any deletion (styled with strike-through)
+              - Attribute - datetime - represents date/time which insert/delete was done
+              - Can nest <ins><del>. add then remove item
+
+
+        <s> or <del>: 
+            - <s>:   text wasn't or can't be literally deleted
+            - <del>: text has or been literally deleted
+
+
+        <q> and <blockquote>:
+          <q>: simple, inline quotations
+          <blockquote>: separate block.
+              Attribute - cite - contains link to resource where text is quoted
+
+        <cite>: Contains titles/names of given information (typically italicized). 
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
