@@ -217,6 +217,48 @@ HTML Text
 
   Keyboard input: <kbd>
     -  Display: Ctrl + S
+
+
+  HTML Div and Span: Generic Containers
+
+        <div> - division: block-level element, used as generic container to mark up a block of content
+                <div style="background-color: yellow">
+                   <h2>A sub-heading</h2>
+                   <p>This is a paragraph.</p>
+                </div>
+
+                1. <div>  -  can be nested in other divs
+                2. <div>  -  can't be nested in some block elements
+
+        <span>: inline element, used as a generic container to mark up an inline piece of content
+                <pre style="background-color: black;color: white;"><samp><span>C:\Users&gt;</span> <kbd>echo Hello World!</kbd>Hello World!
+                <span>C:\Users&gt;</span></samp></pre>
+
+                1. <span>  -  can't contain any block-level elements
+
+
+  The class attribute
+      - attaches an element to a given class based on given class name
+      - almost always used to aid in styling using CSS
+
+      <div class="toc">
+                   ^
+                  toc is the class which the div belongs to
+
+
+  Metadata
+    -  data that describes data
+
+    Three main metadata elements for HTML document
+        <title>: denote a document's title
+            -  Immense value in SEO (Search Engine Optimization) - the factors to better rankings of sites in search engines.
+            -  In short, make sure to have <title> on every single HTML page.
+        <meta>
+        <link>
+
+
+      
+    
     
   
     
